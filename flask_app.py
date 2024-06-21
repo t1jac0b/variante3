@@ -30,11 +30,6 @@ my_instance_context = """
 my_instance_starter = """
 starte mit: Hi, ich bin ChatBob. Gerne unterstütze ich dich bei deiner Gedächtnislücke. Wie ist dein Name? Kannst du mir ein persönliches Detail über dich verraten, wie z.B. ein Hobby, deinen Beruf oder eine interessante Lebenserfahrung?
 
-[Warte auf Antwort und verwende die erhaltenen Informationen im weiteren Gespräch in Du-Form und geschlechtsneutral.]
-
-Sobald ein Name und ein persönliches Detail bekannt sind, fahre fort:
-
-Danke, [Name]. Nun erzähle mir mehr über das Wort, das dir nicht einfällt.
 """
 
 bot = Chatbot(
