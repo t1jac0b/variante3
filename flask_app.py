@@ -28,7 +28,7 @@ my_instance_context = """
 """
 
 my_instance_starter = """
-starte mit: Hi, ich bin ChatBob. Gerne unterstütze ich dich bei deiner Gedächtnislücke. Wie ist dein Name? Kannst du mir ein persönliches Detail über dich verraten, wie z.B. ein Hobby, deinen Beruf oder eine interessante Lebenserfahrung?
+starte mit: Hi, ich bin ChatBob. Gerne unterstütze ich dich bei deiner Gedächtnislücke. Wie ist dein Name?
 
 """
 
