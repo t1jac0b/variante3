@@ -1,23 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>CAS Project Setup</title>
-  </head>
-  <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Willkommen zu deinem Gedankenunterstützer</h1>
-        <p class="lead">Viel spass auf unserer Seite</p>
-        <hr class="my-4">
-        <p>Unser ChatBot wird dir helfen dein vergessengeganges Wort herauszufinden, versuche es jetzt!</p>
-        <a class="btn btn-primary btn-lg" href="/mockups.pdf" role="button">Unsere Mockups</a>
-        <a class="btn btn-primary btn-lg" href="/chatbotvarianteC/chatbotvarianteC/chat" role="button">ChatBob Dein Gedankenunterstützer</a>
-      </div>
-  </body>
+  <title>CAS Project Setup</title>
+  <style>
+    body, .btn, .navbar {
+      animation: flyIn 2s backwards;
+    }
+
+    @keyframes flyIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .jumbotron {
+      background-color: white; /* Dark green background */
+      color: #006400; /* White text */
+      text-align: center; /* Centering text */
+    }
+
+    .btn {
+      background-color: #006400; /* Dark green background */
+      color: white; /* White text */
+    }
+
+    header {
+      background-color: white; /* White background for header */
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .navbar {
+      background-color: #006400; /* Dark green background */
+      color: white; /* White text */
+    }
+
+    .nav-link {
+      color: white; /* White text for navbar links */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Your Plattform</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+         <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mockups.pdf">Surprise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/coach/daniel/chat">Chat Bot </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome</h1>
+    <p class="lead">Try our Chatbot </p>
+    <hr class="my-4">
+    <p>we would be happy about feedbacks from our plattform</p>
+    <a class="btn btn-primary btn-lg" href="/mockups.pdf" role="button">Our mockups</a>
+    <a class="btn btn-primary btn-lg" href="/coach/daniel/chat" role="button">Chatbot</a>
+    <a class="btn btn-primary btn-lg" href="https://www.google.com" target="_blank" role="button">I will search on Google</a>
+  </div>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hm3/5MZ6Oh2wBK1rCvHLTg/S3xub01XSmK4yhgW1Ad6SNJ" crossorigin="anonymous"></script>
+</body>
+</html>
+
+</body>
 </html>
