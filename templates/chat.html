@@ -8,8 +8,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="{{url_for('static', filename='chatbot.js')}}?3"></script>
+    <style>
+      body {
+        background-color: white;
+        color: darkgreen;
+      }
+      .card {
+        border: 1px solid darkgreen;
+      }
+      .card-header {
+        background-color: darkgreen;
+        color: white;
+      }
+      .btn {
+        background-color: darkgreen;
+        color: white;
+        border: 1px solid darkgreen;
+      }
+      .btn:hover {
+        background-color: white;
+        color: darkgreen;
+      }
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .form-control {
+        border: 1px solid darkgreen;
+      }
+      .google-btn {
+        background-color: darkgreen;
+        color: white;
+        border: 1px solid darkgreen;
+      }
+      .google-btn:hover {
+        background-color: white;
+        color: darkgreen;
+      }
+    </style>
   </head>
-  <body class="bg-dark">
+  <body>
 
     <section>
       <div class="container py-5">
@@ -17,9 +54,9 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 col-lg-6 col-xl-4">
     
-            <div class="card bg-dark text-light border-secondary" style="border-radius: 15px;">
+            <div class="card" style="border-radius: 15px;">
               <div
-                class="card-header d-flex justify-content-between align-items-center p-3 bg-secondary border-bottom-0"
+                class="card-header d-flex justify-content-between align-items-center p-3"
                 style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                 <a href="#" class="text-light" onclick="reset(event)"><i class="bi bi-arrow-repeat"></i></a>
                 <p class="mb-0 fw-bold" id="display_type_name">Chat</p>
@@ -30,9 +67,12 @@
               </div>
               <div class="card-body">
                 <div class="d-grid gap-2">
-                  <textarea class="form-control bg-light" id="user_says_input" rows="2"></textarea>
-                  <button class="btn btn-outline-light" type="button" onclick="user_says()"><i class="bi bi-send"></i></button>
+                  <textarea class="form-control" id="user_says_input" rows="2"></textarea>
+                  <button class="btn" type="button" onclick="user_says()"><i class="bi bi-send"></i></button>
                 </div>
+              </div>
+              <div class="card-body">
+                <button class="btn google-btn" onclick="window.location.href='https://www.google.com'">Google is more my friend</button>
               </div>
             </div>
           </div>
