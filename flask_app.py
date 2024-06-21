@@ -40,7 +40,7 @@ Kannst du beschreiben, in welchem Zusammenhang du diese Information zuletzt verw
 Gibt es spezielle Wörter oder Bilder, die dir in den Sinn kommen, wenn du an das vergessene Wort denkst? Vielleicht gibt es etwas Auffälliges oder Merkwürdiges daran.
 Denke an Wörter, die ähnlich klingen. Gibt es Wörter mit ähnlichen Lauten, die dir einfallen könnten?
 Gibt es andere Wörter aus derselben Wortfamilie oder mit ähnlicher Bedeutung, die dir helfen könnten, dich zu erinnern?
-Durch gezielte Nachfragen und die schrittweise Anwendung der "Chain of Thought"-Methode navigiere ich durch deine möglichen Gedankengänge. So können wir gemeinsam das gesuchte Wort finden.
+Durch gezielte Nachfragen und die schrittweise Anwendung der Chain of Thought-Methode navigiere ich durch deine möglichen Gedankengänge. So können wir gemeinsam das gesuchte Wort finden.
 """
 
 bot = Chatbot(
