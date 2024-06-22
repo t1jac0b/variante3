@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -8,42 +8,97 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dyMmDRbk5siogfwXNYQ97bO3BEZ9hGZr7X7jU7f1V6J1/3BFQbrtCgB7rfXh3j0yP7ZhG/mR7slEjJ6zX1mcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
   <title>Gedankensunterstützer</title>
   <style>
-    body, .btn, .navbar {
-      animation: flyIn 2s backwards;
-    }
-
-    @keyframes flyIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .jumbotron {
-      background-color: white; /* Dark green background */
-      color: #006400; /* White text */
-      text-align: center; /* Centering text */
-    }
-
-    .btn {
-      background-color: #006400; /* Dark green background */
-      color: white; /* White text */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
     }
 
     header {
-      background-color: white; /* White background for header */
-      padding: 20px;
+      background: url('https://source.unsplash.com/random/1600x900') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 4rem 0;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
     }
 
     .navbar {
-      background-color: #006400; /* Dark green background */
-      color: white; /* White text */
+      background-color: rgba(0, 0, 0, 0.7);
     }
 
     .nav-link {
-      color: white; /* White text for navbar links */
+      color: white;
+    }
+
+    .nav-link:hover {
+      color: #f8f9fa;
+    }
+
+    .jumbotron {
+      background-color: #fff;
+      color: #006400;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .jumbotron h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+      background-color: #006400;
+      border-color: #006400;
+      color: white;
+      margin: 0.5rem;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #004d00;
+      transform: scale(1.05);
+    }
+
+    .container {
+      margin-top: 3rem;
+    }
+
+    .features-icon {
+      font-size: 2rem;
+      color: #006400;
+      margin-right: 1rem;
+    }
+
+    footer {
+      background-color: #006400;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -51,15 +106,18 @@
 <body>
   <header>
     <h1>Dein Gedankensunterstützer</h1>
+    <p>Willkommen auf unserer Plattform! Hier findest du Hilfe bei fehlenden Worten und Inspirationen für deine Gedanken.</p>
   </header>
+
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg">
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Startseite</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/mockups.pdf">Surprise</a>
+          <a class="nav-link" href="/mockups.pdf">Überraschung</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/chatbotvarianteC/chatbotvarianteC/chat">ChatBob</a>
@@ -67,22 +125,52 @@
       </ul>
     </div>
   </nav>
+
+  <!-- Main Content -->
   <div class="jumbotron">
-    <h1 class="display-4"></h1>
-    <p class="lead">Chatbob ist dein Helfer, falls dir mal ein Wort nicht einfällt</p>
-    <hr class="my-4"> 
-    <p>Teste Chatbob jetzt!</p>
-    <a class="btn btn-primary btn-lg" href="/mockups.pdf" role="button">Funny Cats</a>
+    <h1 class="display-4">Willkommen bei Gedankensunterstützer!</h1>
+    <p class="lead">Chatbob ist dein Helfer, falls dir mal ein Wort nicht einfällt.</p>
+    <hr class="my-4">
+    <p>Teste Chatbob jetzt und entdecke, wie er dir helfen kann, die richtigen Worte zu finden.</p>
+    <a class="btn btn-primary btn-lg" href="/mockups.pdf" role="button">Lustige Katzen</a>
     <a class="btn btn-primary btn-lg" href="/chatbotvarianteC/chatbotvarianteC/chat" role="button">Chatbob</a>
-    <a class="btn btn-primary btn-lg" href="https://www.google.com" target="_blank" role="button">I will search on Google</a>
+    <a class="btn btn-primary btn-lg" href="https://www.google.com" target="_blank" role="button">Auf Google suchen</a>
   </div>
+
+  <!-- Additional Content Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2><i class="fas fa-info-circle features-icon"></i>Über uns</h2>
+        <p>Wir sind ein Team von Sprachliebhabern, die es sich zur Aufgabe gemacht haben, Menschen bei der Suche nach den richtigen Worten zu unterstützen. Mit unserem Chatbot Chatbob bieten wir dir eine intelligente Lösung, um schnell und einfach passende Begriffe zu finden.</p>
+      </div>
+      <div class="col-md-6">
+        <h2><i class="fas fa-bullseye features-icon"></i>Unsere Mission</h2>
+        <p>Unsere Mission ist es, dir dabei zu helfen, deine Gedanken klar und präzise auszudrücken. Ob du nach einem bestimmten Wort suchst oder einfach nur Inspiration brauchst, unser Tool steht dir zur Seite.</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2><i class="fas fa-cogs features-icon"></i>Features</h2>
+        <ul>
+          <li>Schnelle und einfache Wortsuche</li>
+          <li>Intelligente Vorschläge basierend auf deinem Kontext</li>
+          <li>Integration mit verschiedenen Plattformen</li>
+          <li>Benutzerfreundliches Interface</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Gedankensunterstützer. Alle Rechte vorbehalten.</p>
+  </footer>
 
   <!-- Bootstrap JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hm3/5MZ6Oh2wBK1rCvHLTg/S3xub01XSmK4yhgW1Ad6SNJ" crossorigin="anonymous"></script>
-</body>
-</html>
-
 </body>
 </html>
